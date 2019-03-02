@@ -5,7 +5,15 @@
 //var audio = new Audio("377639__danarobinsondesignsgmailcom__b15.mp3");
 //function to play audio
 //audio.play();
+var scoreTally = 0;
 
+var submit= function(){
+  window.location = 'index2.html'
+}
+
+$( "#submit" ).click(function() {
+  submit();
+});
 //set timer and make an alert when the time is up
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
@@ -54,15 +62,7 @@ var $radios3 = $('input[name="ques3"]');
 var $radios4 = $('input[name="ques4"]');
 var $radios5 = $('input[name="ques5"]');
 
-var scoreTally = 0;
 
-var submit= function(){
-  window.location = 'index2.html'
-}
-
-$( "#submit" ).click(function() {
-  submit();
-});
 
 
 
