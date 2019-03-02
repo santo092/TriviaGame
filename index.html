@@ -13,21 +13,73 @@
 
 <body>
 
-    <div class="container" >
+    <div class="container">
         <h1 class="text-center">Trivia! Trivia! Trivia!</h1>
 
         <div id="wrapper">
             <div class="text-center" id="time">1:00</div>
         </div>
 
-        
-
-       
-
     </div>
 
+    <table class="table">
+        <thead>
+            <tr>
+                <br>
+                <h3 id="question1" class="text-center"></h3>
+                <!-- The scope attribute specifies that this is a header for a column -->
+                <div id="question-col">
+                    <input type="radio" name="ques1"  value="0"> Cowboys<br>
+                    <input type="radio" name="ques1"  value="1"> Longhorns<br>
+                    <input type="radio" name="ques1"  value="0"> Texans<br>
+                </div>
+            </tr>
+            <tr>
+                <br>
+                <h3 id="question2" class="text-center"></h3>
+                <!-- The scope attribute specifies that this is a header for a column -->
+                <div id="question-col">
+                    <input type="radio" name="ques2"  value="0"> Houston Rockets<br>
+                    <input type="radio" name="ques2"  value="0"> Miami Heat<br>
+                    <input type="radio" name="ques2"  value="1"> Cleveland Cavaliers<br>
+                </div>
+            </tr>
+            <tr>
+                <br>
+                <h3 id="question3" class="text-center"></h3>
+                <!-- The scope attribute specifies that this is a header for a column -->
+                <div id="question-col">
+                    <input type="radio" name="ques3"  value="0"> two<br>
+                    <input type="radio" name="ques3"  value="0"> one<br>
+                    <input type="radio" name="ques3"  value="1"> none<br>
+                </div>
+            </tr>
+            <tr>
+                <br>
+                <h3 id="question4" class="text-center"></h3>
+                <!-- The scope attribute specifies that this is a header for a column -->
+                <div id="question-col">
+                    <input type="radio" name="ques4"  value="0"> OKC Thunder<br>
+                    <input type="radio" name="ques4"  value="0"> GS Warriors<br>
+                    <input type="radio" name="ques4"  value="1"> Seattle Sonic<br>
+                </div>
+            </tr>
+            <tr>
+                <br>
+                <h3 id="question5" class="text-center"></h3>
+                <!-- The scope attribute specifies that this is a header for a column -->
+                <div id="question-col">
+                    <input type="radio" name="ques5"  value="0"> Chargers<br>
+                    <input type="radio" name="ques5"  value="0"> Patriots<br>
+                    <input type="radio" name="ques5"  value="1"> Cowboys<br>
+                </div>
+            </tr>
+        </thead>
 
+    </table>
 
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
 
 
 
