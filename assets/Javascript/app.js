@@ -57,7 +57,7 @@ var $radios5 = $('input[name="ques5"]');
 var scoreTally = 0;
 
 var submit= function(){
-  window.location = '/Users/alexisvillalpando/Desktop/Desktopfolder/TriviaGame/index2.html'
+  window.location = 'index2.html'
 }
 
 $( "#submit" ).click(function() {
