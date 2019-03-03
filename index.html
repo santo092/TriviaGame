@@ -9,77 +9,88 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="container">
-        <h1 class="text-center">Trivia! Trivia! Trivia!</h1>
 
+    <div class="container text-white">
+        <img class="image" src="assets/images/michael-jordan-black-and-white-Wallpaper-1080p-number-Xdl.jpg">
+
+        
         <div id="wrapper">
-            <div class="text-center" id="time">1:00</div>
+            <br>
+            <br>
+
+                <h1 class="text-center">Trivia! Trivia! Trivia!</h1>
+            <div>
+                <h3 class="text-center">Time remaining: </h3>
+                <h3 class="text-center" id="time">01:00</h3>
+            </div>
+
+
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <br>
+                        <h3 id="question1" class="text-center"></h3>
+                        <!-- The scope attribute specifies that this is a header for a column -->
+                        <div id="question-col">
+                            <input type="radio" name="ques1" value="0"> Cowboys<br>
+                            <input type="radio" name="ques1" value="1"> Longhorns<br>
+                            <input type="radio" name="ques1" value="0"> Texans<br>
+                        </div>
+                    </tr>
+                    <tr>
+                        <br>
+                        <h3 id="question2" class="text-center"></h3>
+                        <!-- The scope attribute specifies that this is a header for a column -->
+                        <div id="question-col">
+                            <input type="radio" name="ques2" value="0"> Houston Rockets<br>
+                            <input type="radio" name="ques2" value="0"> Miami Heat<br>
+                            <input type="radio" name="ques2" value="1"> Cleveland Cavaliers<br>
+                        </div>
+                    </tr>
+                    <tr>
+                        <br>
+                        <h3 id="question3" class="text-center"></h3>
+                        <!-- The scope attribute specifies that this is a header for a column -->
+                        <div id="question-col">
+                            <input type="radio" name="ques3" value="0"> two<br>
+                            <input type="radio" name="ques3" value="0"> one<br>
+                            <input type="radio" name="ques3" value="1"> none<br>
+                        </div>
+                    </tr>
+                    <tr>
+                        <br>
+                        <h3 id="question4" class="text-center"></h3>
+                        <!-- The scope attribute specifies that this is a header for a column -->
+                        <div id="question-col">
+                            <input type="radio" name="ques4" value="0"> OKC Thunder<br>
+                            <input type="radio" name="ques4" value="0"> GS Warriors<br>
+                            <input type="radio" name="ques4" value="1"> Seattle Sonics<br>
+                        </div>
+                    </tr>
+                    <tr>
+                        <br>
+                        <h3 id="question5" class="text-center"></h3>
+                        <!-- The scope attribute specifies that this is a header for a column -->
+                        <div id="question-col">
+                            <input type="radio" name="ques5" value="0"> Chargers<br>
+                            <input type="radio" name="ques5" value="0"> Patriots<br>
+                            <input type="radio" name="ques5" value="1"> Cowboys<br>
+                        </div>
+                    </tr>
+                </thead>
         </div>
+        </table>
+
+        <button id="submit" class="text-center">Submit Quiz</button>
+        <div id="results"></div>
 
     </div>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <br>
-                <h3 id="question1" class="text-center"></h3>
-                <!-- The scope attribute specifies that this is a header for a column -->
-                <div id="question-col">
-                    <input type="radio" name="ques1"  value="0"> Cowboys<br>
-                    <input type="radio" name="ques1"  value="1"> Longhorns<br>
-                    <input type="radio" name="ques1"  value="0"> Texans<br>
-                </div>
-            </tr>
-            <tr>
-                <br>
-                <h3 id="question2" class="text-center"></h3>
-                <!-- The scope attribute specifies that this is a header for a column -->
-                <div id="question-col">
-                    <input type="radio" name="ques2"  value="0"> Houston Rockets<br>
-                    <input type="radio" name="ques2"  value="0"> Miami Heat<br>
-                    <input type="radio" name="ques2"  value="1"> Cleveland Cavaliers<br>
-                </div>
-            </tr>
-            <tr>
-                <br>
-                <h3 id="question3" class="text-center"></h3>
-                <!-- The scope attribute specifies that this is a header for a column -->
-                <div id="question-col">
-                    <input type="radio" name="ques3"  value="0"> two<br>
-                    <input type="radio" name="ques3"  value="0"> one<br>
-                    <input type="radio" name="ques3"  value="1"> none<br>
-                </div>
-            </tr>
-            <tr>
-                <br>
-                <h3 id="question4" class="text-center"></h3>
-                <!-- The scope attribute specifies that this is a header for a column -->
-                <div id="question-col">
-                    <input type="radio" name="ques4"  value="0"> OKC Thunder<br>
-                    <input type="radio" name="ques4"  value="0"> GS Warriors<br>
-                    <input type="radio" name="ques4"  value="1"> Seattle Sonic<br>
-                </div>
-            </tr>
-            <tr>
-                <br>
-                <h3 id="question5" class="text-center"></h3>
-                <!-- The scope attribute specifies that this is a header for a column -->
-                <div id="question-col">
-                    <input type="radio" name="ques5"  value="0"> Chargers<br>
-                    <input type="radio" name="ques5"  value="0"> Patriots<br>
-                    <input type="radio" name="ques5"  value="1"> Cowboys<br>
-                </div>
-            </tr>
-        </thead>
-
-    </table>
-
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
 
 
 

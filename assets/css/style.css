@@ -1,3 +1,41 @@
-#question-col{
-    margin-left: 560px;
+body{
+    
+    width:1100px;
+    
+
+   
 }
+.image{
+    width: 1430px;
+    position: absolute;
+    z-index: 1;
+    float: left;  
+}
+
+#wrapper{
+    margin-left: 600px;
+    position: relative;
+    z-index: 2; 
+    font-family: 'Quicksand', sans-serif;
+    background-color: black;
+}
+
+#innerBody{
+    width: 500px;
+    color: white;
+    
+}
+
+#question-col{
+    margin-left: 195px;
+    color: white;
+}
+
+#submit{
+    margin-left: 185px;
+}
+
+
+
+
+
